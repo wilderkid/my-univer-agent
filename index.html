@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Univer AI 表格</title>
+  </head>
+  <body>
+    <!-- Univer spreadsheet mounts here (main.tsx creates the container dynamically) -->
+    <!-- React mounts the AI panel here — transparent overlay, clicks pass through -->
+    <div id="root" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9998;"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
