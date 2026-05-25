@@ -4,11 +4,16 @@ node_modules
 # Build output
 dist
 dist-ssr
+*.tsbuildinfo
+.vite
 
 # Environment variables (contains API keys)
 .env
 .env.*
 !.env.example
+
+# Runtime data (users, sessions, AI keys, imported workbook state)
+.data/
 
 # Logs
 logs
@@ -32,12 +37,21 @@ lerna-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Local config (only root-level .local files)
 /*.local
 
+# Local spreadsheet/test data
+*.xlsx
+*.xls
+*.xlsm
+~$*
+新建 文本文档*.txt
+
 # Claude Code project config — DO NOT ignore
 # .claude/ is intentionally tracked
+.claude/settings.local.json
 
 # Test / debug HTML (not part of the app)
 test.html

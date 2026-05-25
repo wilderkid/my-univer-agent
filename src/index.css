@@ -10,7 +10,7 @@ html, body {
   overflow: hidden;
 }
 
-/* Re-enable pointer events only on elements inside the React overlay */
-#root > * {
-  pointer-events: auto;
+#root {
+  width: 100%;
+  height: 100%;
 }

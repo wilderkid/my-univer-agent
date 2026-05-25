@@ -4,6 +4,11 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': 'http://127.0.0.1:8787',
+    },
+  },
   resolve: {
     // Force a single React instance — prevents "useContext of null" when
     // Univer's internal React root and our React root see different copies.
